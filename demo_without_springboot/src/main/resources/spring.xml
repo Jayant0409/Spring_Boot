@@ -1,0 +1,36 @@
+
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="dev" class="com.example.Dev" autowire="byType"> 
+
+       <!-- <property name="com" ref="com" /> -->
+  
+       <!-- we are passing the reference of Laptop class to the laptop variable -->
+         <!-- <property name="laptop" ref="lap1" /> -->
+
+        <!-- we are passing the values to the setters in the Dev class -->
+        <!-- <property name="age" value="20"/> -->
+
+      <!-- calling the constructor in Dev class -->
+      <!-- <constructor-arg  index="0"  ref="lap1"/> -->
+
+      <!-- passing the value to the constructor of DEv class  -->
+      <!-- <constructor-arg  index="0"  value="34"/> -->
+    
+      <!-- <property name="com" ref="desk1" /> -->
+      
+    </bean>
+    
+    <bean id="com" class="com.example.Laptop"> </bean>
+
+    <bean id="com1" class ="com.example.Desktop" primary="true"></bean>
+
+      
+</beans>
